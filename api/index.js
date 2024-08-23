@@ -42,8 +42,10 @@ app.use(express.static('spa/static'));
 const PORT = 8080;
 
 app.post('/measurement', function (req, res) {
--       console.log("device id    : " + req.body.id + " key         : " + req.body.key + " temperature : " + req.body.t + " humidity    : " + req.body.h);	
-    const {insertedId} = insertMeasurement({id:req.body.id, t:req.body.t, h:req.body.h});
+    const fechaActual = new Date();
+    const fechaC = `${fechaActual.getFullYear()}-${String(fechaActual.getMonth() + 1).padStart(2, '0')}-${String(fechaActual.getDate()).padStart(2, '0')} ${String(fechaActual.getHours()).padStart(2, '0')}:${String(fechaActual.getMinutes()).padStart(2, '0')}:${String(fechaActual.getSeconds()).padStart(2, '0')}`;
+    console.log("device id    : " + req.body.id + " time		: "+ fechaC + " key         : " + req.body.key + "  temperature : " + req.body.t + " humidity    : " + req.body.h + "  estado	: " + req.body.e);
+    const {insertedId} = insertMeasurement({id:req.body.id, time:fechaC, t:req.body.t, h:req.body.h});
 	res.send("received measurement into " +  insertedId);
 });
 
