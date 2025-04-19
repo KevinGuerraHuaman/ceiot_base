@@ -4,8 +4,7 @@
 
 ### Descripción del trabajo
 
-
-![Propuesta de proyecto](img_propuesta.png)
+<img src="img_propuesta.png" alt="Propuesta de proyecto" width="400"/>
 
 ![Propuesta de implementación](instalacion_v1.png)
 
