@@ -37,23 +37,23 @@ El proyecto propone utilizar sensores de vibración, integrados con tecnologías
 
 
 3. 📦 **Delivery**  
-   - Técnica: [T1105 - Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105/). 
+   - Técnica: [T1105 - Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105/).  
    *Descripción*: Los scripts maliciosos son preparados en herramientas de hacking como Flipper Zero o USB configuradas como BadUSB, aprovechando la disponibilidad física de los puertos USB.
 
 
 4. 🚀 **Exploitation**
-   - Técnica: [T1059 - Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/).
+   - Técnica: [T1059 - Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/).  
    *Descripción*: Al conectar el dispositivo USB, los scripts maliciosos se ejecutan automáticamente mediante intérpretes de comandos como Bash o Python, comprometiendo el sistema sin intervención del usuario.
 
 5. 🖥️ **Installation**  
-   - Técnica: [T1547 - Boot or Logon Autostart Execution](https://attack.mitre.org/techniques/T1547/).
+   - Técnica: [T1547 - Boot or Logon Autostart Execution](https://attack.mitre.org/techniques/T1547/).  
    *Descripción*: Se instalan mecanismos de persistencia que aseguran la ejecución automática de los scripts maliciosos cada vez que el sistema se reinicia o inicia sesión. 
 
 6. 🎛️ **Command and Control**  
-   - Técnica: [T1571 - Non-Standard Port](https://attack.mitre.org/techniques/T1571/).
+   - Técnica: [T1571 - Non-Standard Port](https://attack.mitre.org/techniques/T1571/).  
    *Descripción*: A través de puertos no estándar se establece una conexión a servidores externos. La conexion permite pasar desapercibido y dificuta la detección.
 
 
 7. 🎯 **Actions on Objectives**  
-   - Técnica: [T1041 - Exfiltration Over C2 Channel](https://attack.mitre.org/techniques/T1041/) .
+   - Técnica: [T1041 - Exfiltration Over C2 Channel](https://attack.mitre.org/techniques/T1041/).  
    *Descripción*: Los archivos críticos, incluyendo las llaves de seguridad almacenadas en el Raspberry Pi, son comprimidos y exfiltrados al servidor externo a través del canal descrito en comando y control, minimizando el tiempo de transmisión y el riesgo de detección
