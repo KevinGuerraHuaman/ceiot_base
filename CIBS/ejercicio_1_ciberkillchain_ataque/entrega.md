@@ -4,9 +4,19 @@
 
 ### Descripción del trabajo
 
-<img src="img_propuesta.png" alt="Propuesta de proyecto" width="400"/>
+<table>
+  <tr>
+    <td align="center">
+      <img src="img_propuesta.png" alt="Propuesta de proyecto" width="400"/><br/>
+      <em>Propuesta de proyecto</em>
+    </td>
+    <td align="center">
+      <img src="instalacion_v1.png" alt="Propuesta de implementación" width="400"/><br/>
+      <em>Propuesta de implementación</em>
+    </td>
+  </tr>
+</table>
 
-![Propuesta de implementación](instalacion_v1.png)
 
 El proyecto propone utilizar sensores de vibración, integrados con tecnologías IoT y algoritmos de inteligencia artificial, para monitorear baches de manera eficiente y a menor costo que soluciones tradicionales como LiDAR o cámaras de alta velocidad. Los sensores, instalados en zonas sensibles al movimiento de los vehículos, recopilan datos sobre la forma y profundidad de los baches, que son procesados por una unidad central y transmitidos a la nube para su análisis y visualización remota. El enfoque en inteligencia artificial permite superar la variabilidad del entorno y el ruido del vehículo, mientras que la arquitectura IoT garantiza una conectividad robusta y segura para la gestión y transmisión de los datos.
 
